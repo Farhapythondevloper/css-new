@@ -1,0 +1,23 @@
+h1{
+    color: brown;
+}
+
+.box{
+    height: 500px;
+    width: 500px;
+    background-color: aqua;
+    background-image: url(image/backgroundimg.jpeg);
+    background-size:contain;
+    /* background-size: cover; */
+    background-repeat: no-repeat;
+    /* position: relative; */ /*last element*/
+    /* background-position: left;
+    background-position: right;
+    background-position: center; */
+    /* background-position: bottom; */
+    position: absolute; /* viewport*/
+    /* background-position: left; */
+    /* background-position: right; */
+    /* background-position: center; */
+    /* background-position: bottom; */
+}
