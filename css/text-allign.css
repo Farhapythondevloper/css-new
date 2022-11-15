@@ -1,0 +1,17 @@
+h1{
+    color: red;
+    text-align: left;
+    text-decoration: line-through;
+    text-transform: uppercase;
+    text-shadow: 2px 10px 5px ;
+    font-size: 50px;
+}
+
+.para{
+    letter-spacing: 10px;
+    text-align: justify;
+}
+.para1{
+    word-spacing: 50px;
+    text-align: justify;
+}
