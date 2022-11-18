@@ -1,0 +1,6 @@
+body{
+    background-image: url(image/backgroundimg.jpeg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    text-align: right;
+}
