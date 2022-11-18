@@ -1,0 +1,32 @@
+menu{
+    position: fixed;
+    left: 250px;
+    margin-bottom: 50px; ;
+}
+li{
+    background-color: red;
+    list-style-type:disc ;
+    list-style-position: inside;
+    /* list-style-position: outside; */
+    /* list-style: none; */
+    float: left;
+    padding: 20px;
+}
+a{
+    color: yellow;
+    text-decoration: 20px;
+    font-weight: bold;
+}
+h1{
+    text-align: center;
+}
+p{
+    text-align: justify;
+    position: relative;
+    
+}
+img{
+
+    width: 1350px;
+    height: 700px;
+}
