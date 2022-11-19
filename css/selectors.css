@@ -1,0 +1,25 @@
+#iid{
+    background-color: tomato;
+}
+.dot{
+    background-color: yellow;
+}
+h4 p{
+    background-color: maroon;
+}
+h1{
+    color: aqua;
+}
+h2{
+    color: brown;
+    background-color: yellow;
+}
+h2~p{
+    color: yellow;
+}
+p~p{
+    color: blue;
+}
+p~p{
+    color: green;
+}
