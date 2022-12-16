@@ -1,0 +1,36 @@
+header{
+    background-color: aqua;
+    display: flex;
+}
+.logo{
+    background-color: springgreen;
+    flex-basis: 300px;
+}
+.heading{
+    background-color: slateblue;
+    flex-basis: 1200px;
+    display: flex;
+    flex-wrap: wrap;
+}
+main{
+    background-color: yellow;
+    display: flex;
+    height: 500px;
+}
+.left{
+    background-color: sienna;
+    flex-basis: 400px;
+}
+.middle{
+    background-color: peru;
+    flex-basis: 500px;
+}
+.right{
+    background-color: lightseagreen;
+    flex-basis: 600px;
+    order: 2;
+}
+footer{
+    background-color: steelblue;
+    height: 100px;
+}

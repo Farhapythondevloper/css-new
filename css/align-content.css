@@ -1,0 +1,27 @@
+main{
+    border: 2px solid yellow;
+    display: flex;
+    flex-flow: column wrap;
+    align-content: center;
+    /* align-content: flex-end; */
+    /* align-content: flex-start; */
+    /* align-content: space-around; */
+    /* align-content: space-between; */
+    
+}
+
+.one{
+    background-color: violet;
+    width: 100px;
+    height: 200px;
+}
+.two{
+    background-color: teal;
+    width: 100px;
+    height: 200px;
+}
+.three{
+    background-color: springgreen;
+    width: 100px;
+    height: 200px;
+}

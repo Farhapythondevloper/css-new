@@ -1,0 +1,27 @@
+main{
+    border: 2px solid red;
+    height: 500px;
+    display: flex;
+    flex-flow:  row wrap;
+    justify-content: center;
+    /* justify-content: end; */
+    /* justify-content: first baseline; */
+    /* justify-content: flex-end; */
+    /* justify-content: flex-start; */
+
+}
+.one{
+    background-color: blueviolet;
+    height: 200px;
+    width: 200px;
+}
+.two{
+    background-color: darkslategray;
+    height: 200px;
+    width: 200px;
+}
+.three{
+    background-color: yellow;
+    height: 200px;
+    width: 200px;
+}

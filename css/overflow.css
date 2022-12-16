@@ -7,8 +7,8 @@ body{
     /* background-color: aquamarine; */
     /* overflow: visible; */
     /* overflow: hidden; */
-    /* overflow: auto; */
-    /* overflow: scroll; */
+    overflow: auto;
+    overflow: scroll;
     /* background-attachment: fixed; */
     background-attachment: scroll;
     text-align: justify;
