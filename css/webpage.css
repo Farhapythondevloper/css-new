@@ -2,59 +2,110 @@
     margin: 0px;
     padding: 0px;
 }
-body{
-    display: flex;
-    flex-direction: column;
-}
 main{
-    border: 2px solid black;
     display: flex;
+    border: 2px solid black;
     flex-wrap: wrap;
 }
 aside{
-    border: 1px solid red;
-    /* display: flex; */
     flex-basis: 300px;
+    flex-grow: 2;
+    background-color: lightgrey;
     flex-wrap: wrap;
-    flex-grow: 1;
+    /* justify-content: center; */
     text-align: center;
-
 }
-aside img{
+aside ul{
+    display: flex;
+    flex-direction: column;
+    line-height: 30px;
+}
+
+
+.logo-img img{
     width: 200px;
+   
 }
-ul{
-    display: flex;
-    flex-direction: column;
-}
-
-.maincontent{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
+.mainsection{
     flex-basis: 1000px;
-    flex-grow: 9;
-    border: 2px solid lightgray;
+    flex-grow: 8;
+    flex-wrap: wrap;
     margin: 20px;
-
 }
-
+.logmenu{
+    /* background-color: lightgray; */
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    
+}
 .login{
-    background-color: lightgray;
     display: flex;
     flex-wrap: wrap;
-    justify-content: end;
-
+    background-color: lightblue;
+    justify-content: flex-end;
+    padding: 10px;
 }
 li{
-    list-style: none;
-    margin: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
 }
-.article{
+li input{
+    display: flex;
+    flex-wrap: wrap;
+}
+li ul{
+    background-color: antiquewhite;
+    position: relative;
+    top: 30px;
+    
+}
+li ul li ul {
+    position: relative;
+    top:  30px;
+}
+li ul{
+    display: none;
+    flex-direction: column;
+}
+li:hover ul{
+    display: flex;
+}
+li ul li ul li{
+    background-color: blue;
+    display: none;
+}
+ul li:hover ul li{
+    display: flex;
+}
+
+/* li ul {
+    display: none;
+    flex-direction: column;
+}
+li:hover ul{
+    display: flex;
+}
+li ul li ul li{
+    display: none;
+    flex-direction: column;
+
+}
+li ul:hover ul li{
+    display: flex;
+}
+li ul li ul{
+    position: relative;
+    left: 150px; */
+/* } */
+menu{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    margin: 10px;
 }
+
 .left{
     display: flex;
     flex-wrap: wrap;
@@ -62,44 +113,119 @@ li{
 .right{
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-evenly;
 }
 .heading{
-    border: 1px solid lightgray;
+    border: 2px solid brown;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
 }
-.para-image{
+.heading h1 h2{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.image-para{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    padding: 20px;
+    padding-top: 40px;
 }
 .para{
-    /* display: flex; */
-    flex-basis: 500px;
-    flex-grow: 1;
-    flex-wrap: wrap;
+    flex-basis: 600px;
+    flex-grow: 2;
+
 }
 .image{
-    /* display: flex; */
-    flex-basis: 250px;
-    background-color: gray;
-    flex-grow: 1;
-    flex-wrap: wrap;
+    background-color: lightgrey;
+    flex-basis: 300px ;
+    flex-grow:1 ;
+    /* height: 600px; */
+    margin: 20px;
 }
 .image img{
+    
     width: 300px;
-    padding: 35px;
+    padding: 20px;
+}
+.image h1,p{
+    text-align: center;
+}
+h1{
+    font-size: 40px;
+    justify-content: center;
 }
 
 /* media query */
 
-@media all and (max-width:200px){
+@media all and (min-width:200px){
     h1{
-        background-color: red
+        background-color: brown;
     }
-    .maincontent{
+    .login{
         display: flex;
+        flex-direction: column;
         flex-wrap: wrap;
+        text-align: center;
+        justify-content: end;
+        line-height: 30px;
+    }
+    .login li:hover{
+        background-color: maroon;
+    }
+    .image img{
+        width: 150px;
+    }
+}
+@media all and (min-width:400px){
+    .image img{
+        width: 300px;
+    }
+}
+
+@media all and (min-width:600px){
+    .image img{
+        width: 500px;
+    }
+}
+@media all and (min-width:800px){
+    h1{
+        background-color: yellow;
+    }
+    .login{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: end;
+        
+    }
+    .login li:hover{
+        background-color: maroon;
+    }
+    .image img{
+        width: 700px;
+    }
+}
+
+@media all and (min-width:1000px){
+    h1{
+        background-color: purple;
+    }
+
+    .image img{
+        width: 300px;
+        height: 600px;
+    }
+}
+
+@media all and (min-width:1200px){
+    h1{
+        background-color: ghostwhite;
+    }
+
+    .image img{
+        width: 300px;
+        height: 600px;
     }
 }
